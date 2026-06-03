@@ -1,0 +1,14 @@
+COURSE: ENV 301 - Environmental Policy and Justice
+DATE: May 12, 2026
+TOPIC: DEIR (Diversity, Equity, Inclusion, & Respect) in State Frameworks
+
+* Definition of Environmental Justice (EJ): The fair treatment and meaningful involvement of all people regardless of race, color, national origin, or income, with respect to the development, implementation, and enforcement of environmental laws, regulations, and policies.
+
+* Focus: Washington State Context (Heal Act & Climate Commitment Act)
+  - Historical context: Marginalized, low-income, and tribal communities have disproportionately borne the brunt of environmental pollution (freeway corridors, industrial runoff, lack of green spaces).
+  - Data-Driven Equity: State agencies now use mapping tools (like the Environmental Health Disparities Map) to track cumulative impacts. 
+  - Goal: Directing investments (like clean vehicle programs and air water quality grants) directly to over-burdened communities.
+
+* Key Policy Mechanisms:
+  - Community Engagement: Not just a public hearing at 2 PM on a workday when people are working. Needs accessible, translated, evening/hybrid sessions with community leaders.
+  - Measurable Accountability: Tracking metrics to ensure funding actually hits the zip codes with the highest pollution burdens. Moving away from abstract statements toward concrete, data-backed human outcomes.

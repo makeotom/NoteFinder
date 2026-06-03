@@ -1,0 +1,21 @@
+COURSE: INFO 420 - Data Visualization
+DATE: May 19, 2026
+TOPIC: Human-Centric Design & Advanced Encoding
+
+* The Golden Rule: Design for accessibility and cognitive load. Don't just make it "look cool." If the user can't extract accurate insights within 5 seconds, the encoding failed.
+
+* Gestalt Principles in Viz:
+  - Proximity: Things close together are perceived as a group (use whitespace intentionally to separate data clusters).
+  - Similarity: Colors/shapes that match imply related metrics.
+  - Continuity: The eye follows paths (crucial for line charts and trend tracking).
+
+* Visual Encodings (Ranked by human perceptual accuracy - Cleveland & McGill):
+  1. Position along a common scale (Bar charts, Scatter plots) -> Most accurate!
+  2. Length / Direction
+  3. Angle / Slope (Pie charts - use sparingly, hard for brains to compare subtle angle differences)
+  4. Area / Volume (Bubble charts - easy to distort if encoding by radius instead of area. Always map data to PI * r^2, not just r!)
+  5. Color saturation / Hue (Best for categorical grouping or sequential heatmaps, terrible for precise quantitative reading).
+
+* Ethical Dataviz / Avoiding Distortion:
+  - NEVER truncate the y-axis on a bar chart (it artificially exaggerates differences). Line charts can truncate *if* explicitly labeled to show nuance, but bar charts rely on the total area/length from baseline.
+  - Keep the "heart" of the data intact without over-smoothing or hiding variance that matters to end users.

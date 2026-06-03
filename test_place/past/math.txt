@@ -1,0 +1,20 @@
+COURSE: MATH 208 - Linear Algebra
+DATE: May 26, 2026
+TOPIC: Vector Spaces, Subspaces, and Dimension
+
+* Core Definition: A Vector Space V is a collection of objects (vectors) that can be added together and multiplied by scalars, staying within V (closed under addition & scalar mult). Must satisfy the 10 axioms (associativity, commutativity, zero vector, etc.).
+
+* Subspaces: A subset H of V is a subspace if:
+  1. The zero vector of V is in H.
+  2. H is closed under vector addition (if u, v in H, then u + v in H).
+  3. H is closed under scalar multiplication (if u in H, c is scalar, then cu in H).
+  -- Note: Lines and planes passing THROUGH THE ORIGIN are classic examples in R^3. If it doesn't hit (0,0,0), it's NOT a subspace.
+
+* Basis & Dimension:
+  - Basis: A linearly independent set in V that spans V. Think of it as the minimal efficient generating set. No redundant vectors.
+  - Dimension (dim V): The number of vectors in a basis for V. 
+  - If a space has dim = n, any set of more than n vectors is automatically linearly dependent. Any set of fewer than n vectors cannot span the space.
+
+* Quick Check for HW:
+  - To find a basis for Null Space (Nul A): Solve A*x = 0, write the solution in parametric vector form. The vectors attached to the free variables form the basis.
+  - To find a basis for Column Space (Col A): Look at the pivot columns of the *original* matrix A, not the reduced row echelon form (RREF) matrix! RREF changes the column relationships, only use it to spot where the pivots land.

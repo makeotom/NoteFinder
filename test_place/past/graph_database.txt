@@ -1,0 +1,22 @@
+COURSE: CSE 340 - Advanced Database Systems
+DATE: May 14, 2026
+TOPIC: Graph DBs, Neo4j, and Cypher Query Language
+
+- Why Graph? Relational DBs (SQL) struggle with deep, recursive joins (e.g., social networks, recommendation engines, supply chains). Tables require expensive JOIN operations. Graph DBs store relationships as first-class citizens right on disk (index-free adjacency).
+
+- Core Components:
+  - Nodes (Entities, like a User or a Place)
+  - Labels (Groups nodes, e.g., :Person, :Product)
+  - Relationships (Directed edges connecting nodes, e.g., [:WORKS_AT], [:PURCHASED])
+  - Properties (Key-value pairs on either nodes or relationships)
+
+- Cypher Basics (ASCII-art inspired syntax):
+  - Nodes are in parentheses: `(p:Person)`
+  - Relationships are in brackets with arrows: `-[r:KNOWS]->`
+  
+- Example Query (Finding friends of friends who like Data Science):
+  MATCH (user:Person {name: "Alice"})-[:FRIEND]->(f:Person)-[:FRIEND]->(fof:Person)
+  MATCH (fof)-[:INTERESTED_IN]->(t:Topic {name: "Data Science"})
+  RETURN fof.name, t.name
+
+- Performance Note: Match patterns utilize graph traversal rather than global index lookups. Scales based on the size of the subgraph being traversed, not the total size of the entire database. Huge win for complex networks.

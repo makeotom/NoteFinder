@@ -11,6 +11,8 @@ docker run --name note-finder-db -e POSTGRES_PASSWORD=password -p 5431:5432 -d p
 pgvector:
 ```sh
 docker run --name note-finder-db -e POSTGRES_USER=user -e POSTGRES_PASSWORD=password -e POSTGRES_DB=note-finder-db -p 5431:5432 -d pgvector/pgvector:pg16
+
+docker restart note-finder-db
 ```
 
 ### Delete commands (for clearing embeddings)

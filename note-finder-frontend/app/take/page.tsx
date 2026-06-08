@@ -1,10 +1,9 @@
-import Image from "next/image";
-import ExcalidrawWrapper from './Excalidraw'
+import CanvasShell from "../components/CanvasShell";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <ExcalidrawWrapper/>
-    </div>
+    <main className="w-screen h-screen overflow-hidden">
+      <CanvasShell />
+    </main>
   );
 }
